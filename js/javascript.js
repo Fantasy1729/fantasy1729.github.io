@@ -1,5 +1,11 @@
-var button = document.getElementById("Top_btn");
-window.onscroll = function() {scrollFunction()};
+// Enhanced scroll-to-top button logic with optional smooth behavior
+
+const button = document.getElementById("Top_btn");
+
+if (button) {
+  window.addEventListener("scroll", scrollFunction);
+  button.addEventListener("click", scrollToTop);
+}
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -9,8 +15,6 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function Go_to_top() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }

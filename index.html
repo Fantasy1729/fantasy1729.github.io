@@ -12,35 +12,12 @@
       min-height: 100vh;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-image: linear-gradient(to right, #f8f9fa, #ffffff);
-    }
-    .nav-link {
-      font-size: 1.3rem;
+      overflow-x: hidden;
     }
     .main-title {
       text-align: center;
       margin-top: 100px;
       color: #003366;
-    }
-    .contest-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 50px;
-    }
-    .contest-links a {
-      background-color: #007bff;
-      padding: 15px 25px;
-      border-radius: 10px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      transition: background 0.3s ease, transform 0.2s;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .contest-links a:hover {
-      background-color: #0056b3;
-      transform: translateY(-2px);
     }
     .container {
       border-left: 1px solid #ccc;
@@ -57,25 +34,87 @@
       color: #666;
       border-top: 1px solid #ddd;
     }
+    /* Sidebar styles */
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background-color: #f8f9fa;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      border-right: 1px solid #ccc;
+    }
+    .sidebar a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #333;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      background-color: #e9ecef;
+    }
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      color: #007bff;
+      padding: 10px 15px;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      display: none;
+      z-index: 999;
+    }
   </style>
 </head>
 <body>
+  <div class="overlay" id="overlay" onclick="closeNav()"></div>
+
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="ahsme.html">AHSME</a>
+    <a href="amc.html">AMC</a>
+    <a href="aime.html">AIME</a>
+    <a href="usajmo.html">USAJMO</a>
+    <a href="usamo.html">USAMO</a>
+    <a href="imo.html">IMO</a>
+    <a href="putnam.html">Putnam</a>
+  </div>
+
   <div class="container">
-    <h1 class="main-title display-4">Randomly Post Stuff Here</h1>
+    <h1 class="main-title display-4">Randomly Post My Solutions Here</h1>
     <p class="text-center">Choose a contest to explore problems, solutions, and resources</p>
-    <div class="contest-links">
-      <a href="ahshme.html">AHSME</a>
-      <a href="amc.html">AMC</a>
-      <a href="aime.html">AIME</a>
-      <a href="usajmo.html">USAJMO</a>
-      <a href="usamo.html">USAMO</a>
-      <a href="imo.html">IMO</a>
-      <a href="putnam.html">Putnam</a>
-    </div>
   </div>
 
   <footer>
-    &copy; Last Updated : 2025
+    &copy; 2025 Math Contest Hub | Built by George Kofi Adu
   </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.left = "0";
+      document.getElementById("overlay").style.display = "block";
+    }
+    function closeNav() {
+      document.getElementById("mySidebar").style.left = "-250px";
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
 </body>
 </html>

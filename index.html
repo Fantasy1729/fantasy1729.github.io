@@ -3,151 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Math Contest Portal</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <title>Soundtrack to Survival</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      background-image: linear-gradient(to right, #f8f9fa, #ffffff);
-      color: #333333;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      overflow-x: hidden;
-    }
-    .main-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height: 100vh;
-      text-align: center;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #fefefe;
+      color: #333;
       padding: 20px;
     }
-    .main-title {
-      color: #003366;
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+    header {
+      background: #212529;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 30px;
     }
-    .subtext {
-      font-size: 1.2rem;
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .quote {
+      font-style: italic;
       color: #555;
+      background: #f8f9fa;
+      padding: 10px;
+      border-left: 4px solid #007bff;
     }
     footer {
       text-align: center;
       padding: 20px;
       background-color: #f1f1f1;
+      margin-top: 40px;
       color: #666;
-      border-top: 1px solid #ddd;
     }
-    /* Sidebar styles */
-    .sidebar {
-      height: 100%;
-      width: 250px;
-      position: fixed;
-      top: 0;
-      left: -250px;
-      background-color: #f8f9fa;
-      overflow-x: hidden;
-      transition: 0.3s;
-      padding-top: 60px;
-      border-right: 1px solid #ccc;
-      z-index: 1001;
-    }
-    .sidebar a {
-      padding: 10px 20px;
-      text-decoration: none;
-      font-size: 18px;
-      color: #333;
-      display: block;
-      transition: 0.3s;
-    }
-    .sidebar a:hover {
-      background-color: #e9ecef;
-    }
-    .openbtn {
-      font-size: 20px;
-      cursor: pointer;
-      background-color: transparent;
-      border: none;
-      color: #007bff;
-      padding: 10px 15px;
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      z-index: 1002;
-    }
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.3);
-      display: none;
-      z-index: 1000;
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </head>
 <body>
-  <div class="overlay" id="overlay" onclick="closeNav()"></div>
 
-  <button class="openbtn" onclick="openNav()">&#9776;</button>
+<header>
+  <h1>Soundtrack to Survival</h1>
+  <p>How Gen Z Uses Music to Cope With Mental Health</p>
+</header>
 
- <div id="mySidebar" class="sidebar">
-  <!-- 🟢 Intro/Middle School Level -->
-  <a href="ajhsme.html" onclick="closeNav()">AJHSME</a>
-  <a href="amc8.html" onclick="closeNav()">AMC 8</a>
+<section class="section">
+  <h2>Introduction: Music as Modern Medicine</h2>
+  <p>
+    For Gen Z, music is more than background noise—it's therapy, a coping mechanism, and an emotional lifeline. Whether it's lo-fi beats, mood-based playlists, or sad rap, the sounds we turn to are part of how we survive stress, anxiety, and emotional overload.
+  </p>
+</section>
 
-  <!-- 🔵 Early High School -->
-  <a href="amc10.html" onclick="closeNav()">AMC 10</a>
-  <a href="amc12.html" onclick="closeNav()">AMC 12</a>
-  <a href="ahsme.html" onclick="closeNav()">AHSME</a>
-
-  <!-- 🟡 Intermediate (Team + Individual) -->
-  <a href="purplecomet.html" onclick="closeNav()">Purple Comet</a>
-  <a href="mathprize.html" onclick="closeNav()">Math Prize for Girls</a>
-  <a href="arml.html" onclick="closeNav()">ARML</a>
-
-  <!-- 🟠 Advanced High School -->
-  <a href="aime.html" onclick="closeNav()">AIME</a>
-  <a href="pumac.html" onclick="closeNav()">PUMaC</a>
-  <a href="hmmt.html" onclick="closeNav()">HMMT</a>
-  <a href="cmimc.html" onclick="closeNav()">CMIMC</a>
-
-  <!-- 🔴 Olympiad Level -->
-  <a href="usajmo.html" onclick="closeNav()">USAJMO</a>
-  <a href="usamo.html" onclick="closeNav()">USAMO</a>
-  <a href="imo.html" onclick="closeNav()">IMO</a>
-
-  <!-- ⚫ University -->
-  <a href="putnam.html" onclick="closeNav()">Putnam</a>
-
-   <!-- ⚫ Notes -->
-   <a href="induction.html" onclick="closeNav()">Induction</a>
-
-</div>
-
-
-  <div class="main-content">
-    <h1 class="main-title">Randomly Post My Solutions Here</h1>
-    <p class="subtext">Solutions are not official, so use them at your own risk!</p>
+<section class="section">
+  <h2>Lo-fi Beats: The Sound of Stillness</h2>
+  <p>
+    Lo-fi music blends mellow rhythms, jazz chords, and gentle beats that help listeners focus, relax, or sleep. It's minimalist, non-intrusive, and emotionally neutral—perfect for journaling, studying, or decompressing after a hard day.
+  </p>
+  <div class="quote">
+    "I usually listen to lofi beats when I study. It allows me to clear my head and focus on whatever work I have to do."
   </div>
+  <p>
+    <strong>[Insert waveform visual here]</strong> — A visual showing the calming, consistent rhythm typical of lo-fi music.
+  </p>
+</section>
 
-  <footer>
-    &copy; Last Update: 2025 | Built by Lawrence
-  </footer>
+<section class="section">
+  <h2>Mood-Based Playlists: Emotional Curation</h2>
+  <p>
+    Playlists titled "songs to cry to," "late night drive," or "anxiety relief" have become digital toolkits for Gen Z. These aren't about genre—they're about feeling. They're how we sort and survive emotions.
+  </p>
+  <div class="quote">
+    "Sometimes I don't even know what I'm feeling until I hear it in a song."
+  </div>
+  <p>
+    <strong>[Insert flowchart here]</strong> — A diagram showing how feelings → playlists → healing.
+  </p>
+</section>
 
-  <script>
-    function openNav() {
-      document.getElementById("mySidebar").style.left = "0";
-      document.getElementById("overlay").style.display = "block";
-    }
-    function closeNav() {
-      document.getElementById("mySidebar").style.left = "-250px";
-      document.getElementById("overlay").style.display = "none";
-    }
-  </script>
+<section class="section">
+  <h2>Sad Rap: When Music Hits Too Close</h2>
+  <p>
+    Artists like JuiceWRLD, XXXTentacion, Lil Peep, and NF turn pain into poetry. Their lyrics hit hard because they’re honest. They talk about anxiety, heartbreak, addiction—and they don’t hold back.
+  </p>
+  <div class="quote">
+    "You saved millions, but no one saved you."
+  </div>
+  <p>
+    With minimalist beats, distorted vocals, and emotional depth, sad rap feels like reading someone’s diary. And when the artists themselves pass away young, their music becomes a memorial.
+  </p>
+  <p>
+    <strong>[Insert word cloud here]</strong> — Showing common emotional themes in fan responses.
+  </p>
+</section>
+
+<section class="section">
+  <h2>What Students Say</h2>
+  <p>
+    From dorm rooms to late-night walks, Duke students we interviewed told us how music gives them space to breathe, reflect, and reset. Whether through lo-fi or a playlist called “overthinking at 2AM,” music has become a form of personal care.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Conclusion: Music is Emotional Infrastructure</h2>
+  <p>
+    For Gen Z, music isn’t just about fun. It’s how we hold ourselves together. Whether we’re crying, calming down, or just trying to understand what we’re feeling, music meets us where we are—and helps us move forward.
+  </p>
+</section>
+
+<section class="section text-center">
+  <h3>🎧 Listen With Us</h3>
+  <p>Scan this to check out our curated playlist:</p>
+  <p><strong>[Insert QR Code Here]</strong></p>
+</section>
+
+<footer>
+  &copy; 2025 | Music 137 Project by Liam, Dmitrii, Keith, and George
+</footer>
+
 </body>
 </html>
